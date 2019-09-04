@@ -6,7 +6,13 @@ namespace HelloWorld
     {
         static void Main() 
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Hvad er dit navn? ");
+            var navn = Console.ReadLine();
+
+            if(navn == "Patrick"){
+               Console.WriteLine("Hello World!"); 
+            }
+            
             Console.WriteLine("Press any key to exit.");
             Console.Read();
         }
